@@ -1,0 +1,57 @@
+table, td, tr {
+    color: white;
+    border: 2px;
+    border-style: dashed;
+    border-color: yellow;
+    border-collapse: collapse;
+    margin: 20px;
+    width: 90%;
+    height: 80%;
+}
+
+
+
+h1{
+    position: relative;
+    color:white;
+    left: 40px;
+}
+button {
+    position: relative;
+    left: 20%;
+    border-radius: 8px;
+    width: 100px;
+    height: 50px;
+    
+
+}
+
+button, a {
+    text-decoration: none;
+}
+
+input {
+    width: max-content;
+    height: max-content;
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-align: right;
+    
+}
+input::placeholder{
+    color: white;
+    text-align: right;
+    
+    
+}
+
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #b911cf;
+}
