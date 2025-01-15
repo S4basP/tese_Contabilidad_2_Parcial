@@ -14,7 +14,7 @@ import {data, dataCp, dataFin, docHtml} from "./data.js";
    //Operaciones de la segunda fila
    arrayAdd[1] = parseFloat(data.acredorHipotecario.value) + parseFloat(data.capitalSocial.value);
    //Operaciones de la tercera fila 
-   arrayAdd[2] = parseFloat(data.almacenCargo.value) + parseFloat(data.eqTransporte.value) + parseFloat(data.acredores.value) + parseFloat(data.clientes.value) + parseFloat(data.gastoVentas.value) + parseFloat(data.gastosAdmon.value);
+   arrayAdd[2] = parseFloat(data.almacenCargo.value) + parseFloat(data.eqTransporte.value) + parseFloat(data.costoVentas.value) + parseFloat(data.clientes.value) + parseFloat(data.gastoVentas.value) + parseFloat(data.gastosAdmon.value);
    //Operaciones de la cuarta fila
    arrayAdd[3] = parseFloat(data.bancoAbono.value) + parseFloat(data.almacenAbono.value) + parseFloat(data.proveedores.value) + parseFloat(data.acredores.value) + parseFloat(data.ventas.value);
 
@@ -28,7 +28,7 @@ import {data, dataCp, dataFin, docHtml} from "./data.js";
 
     arrayAdd[7] = arrayPer[1]; 
    
-    arrayAdd[8] = parseFloat(data.terreno.value) + parseFloat(data.edificio.value) + parseFloat(data.eqTransporte.value) + parseFloat(data.clientes.value);
+    arrayAdd[8] = (parseFloat(data.bancoCargo.value) - parseFloat(data.bancoAbono.value)) + parseFloat(data.terreno.value) + parseFloat(data.edificio.value) + parseFloat(data.eqTransporte.value) + parseFloat(data.clientes.value);
 
     arrayAdd[9] = parseFloat(data.acredorHipotecario.value) + parseFloat(data.capitalSocial.value) + parseFloat(data.proveedores.value) + parseFloat(data.acredores.value);
 
@@ -150,3 +150,8 @@ export const printfData  = () => {
     dataFin.gastosAdmonFin2.innerHTML = arraySub[5];
    
 };
+
+
+const banckOperation = () =>{
+  return 
+}
