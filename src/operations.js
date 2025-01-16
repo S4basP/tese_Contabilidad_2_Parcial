@@ -43,7 +43,8 @@ import {data, dataCp, dataFin, docHtml} from "./data.js";
  const operPerdidas= () => {
    let arrayPer = [];
    arrayPer[0] =  parseFloat(data.costoVentas.value) + parseFloat(data.gastoVentas.value) + parseFloat(data.gastosAdmon.value);
-   arrayPer[1] =  arrayPer[0] - data.ventas.value;
+  //  arrayPer[1] =  arrayPer[0] - parseFloat(data.ventas.value);
+    arrayPer [1] = arrayPer[0] - parseFloat(data.ventas.value) < 0 ?  arrayPer[1] = (arrayPer[0] -  parseFloat(data.ventas.value ) ) * -1  : arrayPer[1] = arrayPer[0] - parseFloat(data.ventas.value);
 
 
    return arrayPer;
