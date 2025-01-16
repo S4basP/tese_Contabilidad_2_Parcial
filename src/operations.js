@@ -57,6 +57,7 @@ import {data, dataCp, dataFin, docHtml} from "./data.js";
    data.perdidasAbono.innerHTML = data.ventas.value;
    data.perdidasCargo2.innerHTML = arrayPer[1];
    data.utilidadCargo.innerHTML = arrayPer[1];
+   dataFin.utilidadFin.innerHTML = arrayPer[1];
 
 
  }
