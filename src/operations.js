@@ -74,7 +74,7 @@ import {data, dataCp, dataFin, docHtml} from "./data.js";
    arraySub[3] = parseFloat(data.costoVentas.value) - parseFloat(data.costoVentas.value);
    arraySub[4] = parseFloat(data.gastoVentas.value) - parseFloat(data.gastoVentas.value);
 
-   arraySub[5] = parseFloat(data.gastosAdmon.value) - parseFloat(data.gastoVentas.value);
+   arraySub[5] = parseFloat(data.gastosAdmon.value) - parseFloat(data.gastosAdmon.value);
 
 
    //perdidas y ganancias 
@@ -153,6 +153,3 @@ export const printfData  = () => {
 };
 
 
-const banckOperation = () =>{
-  return 
-}
