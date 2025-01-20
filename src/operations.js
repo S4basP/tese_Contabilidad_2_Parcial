@@ -28,9 +28,9 @@ import {data, dataCp, dataFin, docHtml} from "./data.js";
 
     arrayAdd[7] = arrayPer[1]; 
    
-    arrayAdd[8] = (parseFloat(data.bancoCargo.value) - parseFloat(data.bancoAbono.value)) + parseFloat(data.terreno.value) + parseFloat(data.edificio.value) + parseFloat(data.eqTransporte.value) + parseFloat(data.clientes.value);
+    arrayAdd[8] = (parseFloat(data.bancoCargo.value) - parseFloat(data.bancoAbono.value)) + parseFloat(data.terreno.value) + parseFloat(data.edificio.value) + parseFloat(data.eqTransporte.value) + parseFloat(data.clientes.value) +arrayPer[1] ;
 
-    arrayAdd[9] = parseFloat(data.acredorHipotecario.value) + parseFloat(data.capitalSocial.value) + parseFloat(data.proveedores.value) + parseFloat(data.acredores.value);
+    arrayAdd[9] = parseFloat(data.acredorHipotecario.value) + parseFloat(data.capitalSocial.value) + parseFloat(data.proveedores.value) + parseFloat(data.acredores.value) + arrayPer[1];
 
 
   
@@ -61,7 +61,6 @@ import {data, dataCp, dataFin, docHtml} from "./data.js";
 
 
  }
-
 
 
 //Funcion que resta los datos por filas
